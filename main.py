@@ -1,4 +1,4 @@
-MAX_LINES =3
+MAX_LINES = 3
 MAX_BET = 21000000
 MIN_BET = 1
 
@@ -39,7 +39,7 @@ def get_bet():
             if MIN_BET <= amount <= MAX_BET:
                 break
             else:
-                print (f"Come on who you kidding cough it up. you need to enter an amount between ${MIN_BET} - ${MAX_BET} Bub!")
+                print(f"Come on who you kidding cough it up. you need to enter an amount between ${MIN_BET} - ${MAX_BET} Bub!")
         else:
             print("Give me some money.") 
             
@@ -52,9 +52,10 @@ def main():
     total_bet  = bet * lines
     while True:
         if total_bet > balance:
-            print(f"You dont have enough cash my man, your to broke you current balance is: ${balance}")
-    else: 
+            print(f"You dont have enough cash my man, your too broke, your current balance is: ${balance}")
+        else:
             break
+    
     print(f"You are betting ${bet} on {lines} lines. Total bet is equal to: ${total_bet} ")
 
 
